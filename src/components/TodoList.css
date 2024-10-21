@@ -1,0 +1,145 @@
+/* Container for the entire Todo List */
+.todo-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header for the Todo List */
+.header {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Container for the input field and Add button */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Styling for the input field */
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Add button styling */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the task list (unordered list) */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Container for each task item */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Styling for completed tasks */
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Checkbox styling for completing tasks */
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Delete button (icon) styling */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff6347;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.delete-btn:hover {
+  color: #ff0000;
+}
+
+/* Filter buttons container */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Filter buttons styling */
+.filter-btn {
+  margin: 0 5px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Active filter button */
+.active-filter {
+  background-color: #28a745;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 480px) {
+  .todo-container {
+    padding: 10px;
+    max-width: 90%;
+  }
+
+  .input-container input[type="text"] {
+    font-size: 14px;
+  }
+
+  .task-item {
+    font-size: 16px;
+  }
+
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

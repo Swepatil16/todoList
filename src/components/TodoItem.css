@@ -1,0 +1,23 @@
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff6347;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #ff0000;
+}
